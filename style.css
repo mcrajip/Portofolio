@@ -1,3 +1,11 @@
+/* body {
+    background-color: black;
+    
+}
+p {
+    color: aqua;
+} */
+
 section {
     padding-top: 128px;
     position: relative;
@@ -43,6 +51,10 @@ section::before {
     width: 60px;
 }
 
+.home img {
+    width: 100%;
+}
+
 #arrow {
     animation: 2s upDown infinite;
 }
@@ -66,8 +78,8 @@ section::before {
 }
 
 .col-4 img {
-    width: 80%;
-    border-radius: 180px 180px 180px 180px;
+    width: 380px;
+    height: 400px;
     background-color: white;
     
 }
@@ -126,6 +138,35 @@ section::before {
     grid-area: work-3;
 }
 
+.contact::before {
+    content: 'Contact';
+}
+
+.contact-form {
+    border: 1px solid black;
+    padding: 64px 32px;
+}
+
+.contact {
+    margin-bottom: 128px;
+}
+.form-label {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+        padding-left: 15px;
+    }
+}
 @keyframes upDown {
     0% {
         transform: translateY(0);
